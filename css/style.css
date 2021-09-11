@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* primary */
+    --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    /* neutral */
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+    /* fonsize */
+    --font-size: 14px;
+}
+body{
+    font-size: var(--font-size);
+    background-image: url(../images/bg-mobile.png);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway;
+}
+svg{
+    /* margin-right: 1em; */
+}
+.main{
+    width: 65%;
+    max-width: 325px;
+}
+.fylo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.fylo__item{
+    background-color: var(--dark-blue);
+    padding: 2.6em;
+}
+.fylo__item1{
+    border-radius: .5em 7em .5em .5em;
+}
+.logo{
+    margin-bottom: 2.3em;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.icono{
+    display: flex;
+    align-items: center;
+    background-color: var(--very-dark-blue);
+    padding: .5em .8em;
+    height: 3em;
+    border-radius: .5em;
+}
+.fylo__item2{
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.3em;
+    position: relative;
+    padding-bottom: 3.7em;
+}
+.p-white{
+    text-align: center;
+    color: var(--pale-blue);
+}
+.p-white span{
+    font-weight: 700;
+}
+.fylo__barra{
+    width: 100%;
+    height: 1.4em;
+    border-radius: 1.4em;
+    position: relative;
+    background: var(--very-dark-blue);
+    display: flex;
+    padding-left: .2em;
+    align-items: center;
+}
+.fylo__barrita{
+    width: 74%;
+    height: 1em;
+    border-radius: 1em;
+    background: linear-gradient(90deg,hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
+    position: relative;
+}
+.fylo__barrita::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: .1em;
+    right: .1em;
+    height: .8em;
+    width: .8em;
+    border-radius: 50%;
+    background: white ;
+}
+.fylo__gb{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: var(--pale-blue);
+    font-weight: bold;
+}
+.fylo__gbleft{
+    color: var(--very-dark-blue);
+    display: flex;
+    font-weight: bold;
+    /* font-size: 2.5em; */
+    background: white;
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 170px;
+    padding: 1em;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+.gbleft__p{
+    font-size: 3em;
+    /* background: red; */
+}
+.gbleft_p2{
+    display: inline-block;
+    font-size: 1em;
+    color: var(--grayish-blue);
+}
+.attribution{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    /* background: red; */
+    width: 100%;
+    padding: 2.1em 0;
+    color: white;
+}
