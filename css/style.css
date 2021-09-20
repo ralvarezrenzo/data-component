@@ -37,11 +37,13 @@ svg{
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.5em;
 }
 .fylo__item{
     background-color: var(--dark-blue);
     padding: 2.6em;
+    width: 100%;
 }
 .fylo__item1{
     border-radius: .5em 7em .5em .5em;
@@ -150,4 +152,53 @@ svg{
     width: 100%;
     padding: 2.1em 0;
     color: white;
+}
+@media  screen and (min-width: 900px) {
+    body{
+        background-color: var(--very-dark-blue);
+        background-image: url(../images/bg-desktop.png);
+        background-size: 100% 50%;
+        background-position: bottom left;
+        background-repeat: repeat-x;
+    }
+    .main{
+        width: 850px;
+        max-width: 850px;
+    }
+    .fylo{
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .fylo__item{
+        width: 325px;
+    }
+    .fylo__item2{
+        width: 500px;
+        padding: 2.6em;
+        padding-bottom: 2em;
+    }
+    .fylo__gbleft{
+        top: -35%;
+        bottom: initial;
+        right: 8%;
+        left: initial;
+        margin: initial;
+    }
+    .fylo__gbleft::after{
+        content: '';
+        position: absolute;
+        /* width: 30px; */
+        /* height: 30px; */
+        background:transparent;
+        top: 93%;
+        right: 0;
+        border-style: solid;
+        border-width: 15px 15px 15px 15px;
+        border-color: white white transparent transparent;
+    }
+    .p-white{
+        text-align: left;
+        color: var(--pale-blue);
+    }
 }
